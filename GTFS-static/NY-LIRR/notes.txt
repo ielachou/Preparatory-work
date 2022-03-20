@@ -1,0 +1,24 @@
+- Pas toutes les colonnes dans le fichier (stop_times). -> Missing value, préprocessing ?
+
+
+- ERROR:  invalid input syntax for type integer: "00985F"
+CONTEXT:  COPY routes, line 2, column route_type: "00985F"
+SQL state: 22P02
+
+Conversion implicite mais pas là. Car route_desc n'existe pas dans le gtfs utilisé.
+
+- ERROR:  insert or update on table "routes" violates foreign key constraint "routes_route_type_fkey"
+DETAIL:  Key (route_type)=(2) is not present in table "route_types".
+SQL state: 23503
+
+fichier route_type inexistant.
+
+- Add wheelchair_boarding int dans stops.
+
+
+
+Différence STIB - NY LIRR : 
+
+- pas de route desc dans la table route.
+- Présence de table feed_info
+- 
