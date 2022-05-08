@@ -1,0 +1,2 @@
+id, name, phone, url, organisationType
+STIB-MIVB,STIB,070 23 2000,http://www.stib-mivb.be,other
