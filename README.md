@@ -1,5 +1,4 @@
 # Preparatory work for master thesis
-
 This repository will store all the necessary code to reproduce the import/export for mobility data exchange standards
 into MobilityDB.
 
@@ -8,6 +7,17 @@ into MobilityDB.
 * MobilityDB
 * Python >= 3.0
 * Protobuf Python version
+
+## Raw data files
+
+The files used in this tutorial are available on these links:
+* GTFS static STIB : https://transitfeeds.com/p/mta/86
+* GTFS static NY-LIRR : https://transitfeeds.com/p/mta/86
+* GTFS realtime NY-LIRR : https://transitfeeds.com/p/mta/421
+* NeTEx STIB : https://www.transportdata.be/fr/dataset/stib-mivb-netex/resource/4a733029-9ef9-4fd5-b3df-d4ab42ba1a9c
+
+All the files are also directly available in the project, except for the NeTEx file, which is too large for being uploaded.
+
 
 ## GTFS Static
 
