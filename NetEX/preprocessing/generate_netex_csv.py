@@ -1,5 +1,5 @@
 import xml.etree.ElementTree as et
-from fileUtils import *
+from NetEX.preprocessing.utils.fileUtils import *
 from time import time
 
 startPos='<gml:Point srsName="EPSG:2154"><gml:pos>'
@@ -86,18 +86,21 @@ def parseRec(tree, fQuays, fDayTypes, fSJP, fOperators, fLine, fStopPlace, fServ
 
 
 if __name__ == "__main__":
+	print("[INFO] - Parsing XML file...")
 	t1 = time()
-	tree = et.parse('C:\\Users\\HP\\Downloads\\stibmivb-epip-latest.xml')
-	print("Ended parsing after ", time() -t1)
-
+	tree = et.parse('../stibmivb-epip-latest.xml')
+	print("[INFO] - Ended parsing XML file after", round(time() - t1),"seconds.")
 	root = tree.getroot()
-	print("Found root")
 
 
+
+	print("[INFO] - Opening output files...")
 	fQuays, fDayTypes, fSJP, fOperators, fLine, fStopPlace, fServiceJourney\
 		, fScheduledStopPoint, fStopAssi, fStopPointsInSeq = openAllFiles()
+	print("[INFO] - writing output files...")
 	parseRec(root, fQuays, fDayTypes, fSJP, fOperators, fLine, fStopPlace,fServiceJourney,fScheduledStopPoint, fStopAssi
 	         ,fStopPointsInSeq)
+	print("[INFO] - closing output files...")
 	closeAllFiles(fQuays, fDayTypes, fSJP, fOperators, fLine, fStopPlace,fServiceJourney, fScheduledStopPoint, fStopAssi
 	              ,fStopPointsInSeq)
 

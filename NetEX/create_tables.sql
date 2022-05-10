@@ -102,5 +102,5 @@ Create Table passingTimes(
 
 -- Create a table to store the shape geometries
 CREATE TABLE shape_geoms (
-shape_geom geometry('LINESTRING', 2154)
+    shape_geom geometry('LINESTRING', 2154)
 );
