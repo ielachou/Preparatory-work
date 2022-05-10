@@ -1,4 +1,4 @@
-
+CREATE EXTENSION IF NOT EXISTS MobilityDB CASCADE;
 
 update quays set centroid_geom = ST_GEOMFROMGML(concat('<gml:Point srsName="EPSG:2154"><gml:pos>',centroid_val,'</gml:pos></gml:Point>'));
 

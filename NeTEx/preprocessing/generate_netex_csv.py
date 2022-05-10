@@ -1,5 +1,5 @@
 import xml.etree.ElementTree as et
-from NetEX.preprocessing.utils.fileUtils import *
+from NeTEx.preprocessing.utils.fileUtils import *
 from time import time
 
 startPos='<gml:Point srsName="EPSG:2154"><gml:pos>'

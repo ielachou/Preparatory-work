@@ -1,4 +1,4 @@
-create extension if not exists mobilityDB cascade;
+CREATE EXTENSION IF NOT EXISTS MobilityDB CASCADE;
 
 -- Quays
 Create Table Quays(

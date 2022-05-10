@@ -18,7 +18,7 @@ The files used in this tutorial are available on these links:
 
 All the files are also directly available in the project, except for the NeTEx file, which is too large for being uploaded.
 
-
+For this tutorial, we assume that all the content of this repository is extracted in <code>/tmp/Preparatory-work/</code>
 ## GTFS Static
 
 To import GTFS static data, we only use SQL statements. This part is in three parts :
@@ -27,7 +27,7 @@ To import GTFS static data, we only use SQL statements. This part is in three pa
 * Import the data with <code>import.sql</code>
 * Finally, we set up the geometries to visualize them with <code>set_up_geoms.sql</code>.
 
-![image info](./GTFS-static/NY-LIRR/GTFS visualization.png)
+![image info](./GTFS-static/NY-LIRR/GTFS%20visualization.png)
 
 ## GTFS Real-time
 
@@ -45,4 +45,4 @@ A first step of preprocessing is necessary to convert the XML NeTEx file into a 
 
 Then we create the tables, import the data and set up the geometries.
 
-![image info](./NetEX/NeTEx%20visualization.png)
+![image info](NeTEx/NeTEx%20visualization.png)
